@@ -1,0 +1,21 @@
+<section class="envelope-overlay" id="envelopeOverlay" aria-label="Открытие приглашения">
+  <div class="envelope-scene">
+    <button class="envelope" id="openInviteBtn" type="button" aria-label="Открыть приглашение">
+      <span class="envelope-top"></span>
+      <span class="envelope-letter">Нажмите, чтобы открыть приглашение</span>
+    </button>
+  </div>
+</section>
+
+<script>
+  const overlay = document.getElementById('envelopeOverlay');
+  const button = document.getElementById('openInviteBtn');
+
+  button?.addEventListener('click', () => {
+    overlay?.classList.add('opened');
+    document.body.classList.add('invitation-opened');
+    setTimeout(() => {
+      overlay?.setAttribute('hidden', 'true');
+    }, 900);
+  });
+</script>

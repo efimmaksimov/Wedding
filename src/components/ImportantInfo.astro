@@ -1,0 +1,10 @@
+---
+const { important, formLink } = Astro.props;
+---
+<section id="info" class="block info-block">
+  <h2>Важная информация</h2>
+  <ul>
+    {important.map((item) => <li>{item}</li>)}
+  </ul>
+  <a class="btn" href={formLink} target="_blank" rel="noreferrer">Заполнить анкету гостя</a>
+</section>

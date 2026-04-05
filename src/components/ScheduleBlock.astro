@@ -1,0 +1,14 @@
+---
+const { schedule } = Astro.props;
+---
+<section id="schedule" class="block schedule-block">
+  <h2>Расписание дня</h2>
+  <ul class="timeline">
+    {schedule.map((item) => (
+      <li>
+        <span class="time">{item.time}</span>
+        <span class="event">{item.event}</span>
+      </li>
+    ))}
+  </ul>
+</section>

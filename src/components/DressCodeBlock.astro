@@ -1,0 +1,10 @@
+---
+const { palette } = Astro.props;
+---
+<section id="dress-code" class="block dress-block">
+  <h2>Дресс-код</h2>
+  <p>Будем рады, если вы поддержите нашу палитру праздника:</p>
+  <div class="palette" aria-label="Цветовая палитра дресс-кода">
+    {palette.map((color) => <span class="dot" style={`--dot:${color}`}></span>)}
+  </div>
+</section>
