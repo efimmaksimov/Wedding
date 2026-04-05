@@ -1,17 +1,26 @@
 # Wedding invitation site
 
-Статический одностраничный сайт-приглашение на свадьбу.
+Одностраничный сайт-приглашение на свадьбу, собранный на Astro.
+
+## Локальный запуск
+
+```bash
+npm install
+npm run dev
+```
+
+## Сборка
+
+```bash
+npm run build
+npm run preview
+```
 
 ## GitHub Pages
 
-В репозиторий добавлен workflow `.github/workflows/deploy-pages.yml`.
-После пуша в ветку `main`, `master` или `work` сайт автоматически публикуется в GitHub Pages.
+Публикация выполняется через GitHub Actions workflow `.github/workflows/deploy-pages.yml`.
 
-Ожидаемый URL (если репозиторий называется `Wedding`):
-
-- `https://<your-github-username>.github.io/Wedding/`
-
-Если в настройках репозитория включён deploy из GitHub Actions, ссылка появится в:
-
-- **Settings → Pages**
-- либо в summary успешного workflow `Deploy static site to GitHub Pages`
+После пуша в ветку `main`, `master` или `work` workflow:
+1. устанавливает зависимости,
+2. собирает сайт в `dist`,
+3. деплоит результат в GitHub Pages.

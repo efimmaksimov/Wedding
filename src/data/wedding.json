@@ -1,0 +1,42 @@
+{
+  "couple": {
+    "bride": "Анна",
+    "groom": "Максим"
+  },
+  "date": "18 июля 2026",
+  "arrivalTime": "15:30",
+  "welcomeTime": "15:00",
+  "venue": {
+    "name": "Загородный клуб «Сосновый Берег»",
+    "address": "Московская область, г. Химки, ул. Лесная, 12",
+    "photo": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1600&q=80",
+    "mapEmbed": "https://yandex.ru/map-widget/v1/?ll=37.443452%2C55.889724&z=15&pt=37.443452,55.889724,pm2rdm"
+  },
+  "invitationText": "С любовью приглашаем вас разделить с нами самый тёплый и важный день — день нашей свадьбы.",
+  "palette": ["#F2E6D8", "#DCC7A1", "#C2D4C2", "#B8C7E2", "#DDB5B3", "#9D8B7D"],
+  "dressRefs": [
+    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+  ],
+  "schedule": [
+    { "time": "15:00", "event": "Сбор гостей и welcome-drink" },
+    { "time": "15:30", "event": "Выездная церемония" },
+    { "time": "17:00", "event": "Праздничный ужин" },
+    { "time": "19:00", "event": "Тосты, танцы и программа" },
+    { "time": "23:00", "event": "Торт и финальный сюрприз" }
+  ],
+  "important": [
+    "Для всех гостей предусмотрена возможность переночевать на площадке.",
+    "Если вам нужен номер, пожалуйста, отметьте это в анкете заранее.",
+    "Формат подарка — на ваше усмотрение, нам важнее ваше присутствие."
+  ],
+  "formLink": "https://forms.gle/example",
+  "organizer": {
+    "name": "Екатерина (организатор)",
+    "phone": "+7 (999) 123-45-67",
+    "telegram": "https://t.me/example"
+  },
+  "heroPhoto": "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1600&q=80"
+}

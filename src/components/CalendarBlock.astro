@@ -1,0 +1,12 @@
+---
+const { date, arrivalTime } = Astro.props;
+const day = date.split(' ')[0];
+---
+<section id="calendar" class="block calendar-block">
+  <h2>Когда вас ждать</h2>
+  <div class="calendar-card" role="img" aria-label={`Календарь, дата свадьбы ${date}`}>
+    <span class="month">Июль 2026</span>
+    <span class="day">{day}</span>
+  </div>
+  <p>Пожалуйста, приезжайте к <strong>{arrivalTime}</strong>.</p>
+</section>

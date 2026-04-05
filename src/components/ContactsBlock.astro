@@ -1,0 +1,9 @@
+---
+const { organizer } = Astro.props;
+---
+<section id="contacts" class="block contacts-block">
+  <h2>Контакты организатора</h2>
+  <p><strong>{organizer.name}</strong></p>
+  <p><a href={`tel:${organizer.phone.replace(/[^\d+]/g, '')}`}>{organizer.phone}</a></p>
+  <p><a href={organizer.telegram} target="_blank" rel="noreferrer">Telegram</a></p>
+</section>
