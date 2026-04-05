@@ -24,3 +24,11 @@ npm run preview
 1. устанавливает зависимости,
 2. собирает сайт в `dist`,
 3. деплоит результат в GitHub Pages.
+
+### Если в Pages не видно обновлений
+
+1. Убедитесь, что в `Settings → Pages` выбран источник **GitHub Actions**.
+2. Проверьте, что последний run workflow `Deploy static site to GitHub Pages` завершился статусом **Success**.
+3. Откройте страницу в режиме инкогнито/с принудительным обновлением (`Ctrl+F5`) — браузер может кэшировать старую версию.
+
+4. Если в Actions ошибка `Dependencies lock file is not found`, уберите `cache: npm` из `actions/setup-node` или добавьте `package-lock.json`.
