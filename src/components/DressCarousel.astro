@@ -1,0 +1,39 @@
+---
+const { dressRefs } = Astro.props;
+---
+<section class="block carousel-block">
+  <h2>Референсы образов</h2>
+  <div class="swiper dress-swiper">
+    <div class="swiper-wrapper">
+      {dressRefs.map((img, i) => (
+        <div class="swiper-slide">
+          <img src={img} alt={`Референс дресс-кода ${i + 1}`} loading="lazy" />
+        </div>
+      ))}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<script>
+  import Swiper from 'swiper';
+  import { Pagination } from 'swiper/modules';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+
+  new Swiper('.dress-swiper', {
+    modules: [Pagination],
+    slidesPerView: 1.2,
+    spaceBetween: 12,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.3,
+        spaceBetween: 16
+      }
+    }
+  });
+</script>

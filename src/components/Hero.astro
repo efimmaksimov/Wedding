@@ -1,0 +1,9 @@
+---
+const { couple, invitationText, heroPhoto } = Astro.props;
+---
+<section id="hero" class="block hero">
+  <img src={heroPhoto} alt="Фото молодожёнов" class="hero-photo" loading="eager" />
+  <p class="eyebrow">Свадебное приглашение</p>
+  <h1>{couple.bride} <span>&amp;</span> {couple.groom}</h1>
+  <p class="lead">{invitationText}</p>
+</section>

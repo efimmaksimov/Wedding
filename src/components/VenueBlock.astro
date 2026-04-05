@@ -1,0 +1,12 @@
+---
+const { venue } = Astro.props;
+---
+<section id="venue" class="block venue-block">
+  <h2>Место проведения</h2>
+  <img src={venue.photo} alt="Площадка проведения свадьбы" class="venue-photo" loading="lazy" />
+  <p><strong>{venue.name}</strong></p>
+  <p>{venue.address}</p>
+  <div class="map-wrap">
+    <iframe title="Карта места проведения свадьбы" src={venue.mapEmbed} loading="lazy" allowfullscreen></iframe>
+  </div>
+</section>
